@@ -14,6 +14,8 @@ stdenv.mkDerivation rec {
 
   unpackPhase = "tar -xzf ${src} --strip-components=1";
 
+  enableParallelBuilding = true;
+
   postInstall = ''
     install -D ${./eid-nssdb.in} $out/bin/eid-nssdb
     substituteInPlace $out/bin/eid-nssdb \
