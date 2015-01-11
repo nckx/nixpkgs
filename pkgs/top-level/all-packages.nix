@@ -1272,6 +1272,8 @@ let
     gtk = gtk3;
   };
 
+  gateone = callPackage ../servers/gateone { };
+
   gawk = callPackage ../tools/text/gawk { };
 
   gawkInteractive = appendToName "interactive"
