@@ -590,7 +590,7 @@ nothing.</para>
 
   <varlistentry>
     <term><varname>makeFlags</varname></term>
-    <listitem><para>Additional flags passed to
+    <listitem><para>A list of strings passed as additional flags to
     <command>make</command>.  These flags are also used by the default
     install and check phase.  For setting make flags specific to the
     build phase, use <varname>buildFlags</varname> (see
